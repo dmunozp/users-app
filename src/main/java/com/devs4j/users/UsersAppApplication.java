@@ -31,6 +31,7 @@ public class UsersAppApplication implements ApplicationRunner {
 			user.setPassword(faker.dragonBall().character());
 			user.setProfile(null);
 			repository.save(user);
+			System.out.println("");
 		}
 	}
 
