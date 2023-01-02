@@ -35,6 +35,16 @@ public class UserInRole {
 	@JoinColumn(name = "role_id", referencedColumnName = "id")
 	private Role role;
 
+	public UserInRole() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public UserInRole(User user, Role role) {
+		super();
+		this.user = user;
+		this.role = role;
+	}
+
 	public Integer getId() {
 		return id;
 	}
